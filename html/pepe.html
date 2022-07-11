@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pepe.css">
+    <script src="https://kit.fontawesome.com/5ef7da4636.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Ferretería Vela</title>
+</head>
+<body>
+    <main>
+        <!-- MENU -->
+        <header>
+            <h1>Ferreteria Vela</h1>
+            <nav class="menuPepe">
+                <ul>
+                    <li>Sobre Nosotros</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MENU DE COMPRAS -->
+
+        <div class="carrito-compras">
+            <i id="shop" class="fa-solid fa-bag-shopping"></i>
+            <div id="menuShop" class="menuCompras">
+                <i id="removeShop" class="fa-solid fa-x"></i>
+                <h2>Menu de compras</h2>
+                <div class="pepeProductos" id="pepeProductos"></div>
+            </div>
+        </div>
+
+        <!-- CONTENIDO DE PRESENTACIÓN -->
+        <div class="container">
+            <h2 id="h2" >La mejor ferretería <br> de Juarez</h2>
+            <button><a href="#ContainProducts">Ver mas</a></button>
+        </div>
+    </main>
+
+    <section id="ContainProducts">
+        <div class="contain">
+                <h2> Lista de nuestros Productos</h2>
+                <div class="productosInf" id="productosInf">
+                </div>
+
+        </div>
+    </section>
+
+    <script src="../pepe.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+main header{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    display: flex;
+}
+
+.carrito-compras{
+    position: fixed;
+    z-index: 9999;
+}
+
+.carrito-compras #shop{
+    position: fixed;
+    font-size:50px;
+    color: rgb(77, 44, 7);
+    bottom: 20px;
+    right: 20px;
+}
+
+.carrito-compras .menuCompras{
+    width: 450px;
+    height: 100vh;
+    background-color:rgb(0, 0, 0);
+    position: fixed;
+    right: 0;
+    top:0;
+    transform: translate(100%);
+    overflow: auto;
+}
+
+.carrito-compras .menuCompras i{
+    color: #CC9544;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}
+.carrito-compras .menuCompras h2{
+    color: white;
+    line-height:70px;
+    font-size: 35px;
+}
+
+main {
+    background-image: url(../img/imagen-fondo-main.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+}
+
+.menuPepe{
+    color: white;
+    position: absolute;
+    right: 10px;
+}
+
+.menuPepe ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.menuPepe ul li{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+.menuPepe ul li:hover{
+    background-color:#c8964a;
+    transition: .5s;
+}
+
+main{
+    height: 100vh;
+    min-height: 400px;
+    width: 100%;
+    min-width: 1000px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container h2{
+    font-size: 50px;
+    opacity: 1;
+    color: #ffffff;
+    width: 80vh;
+    border-radius: 30px;
+}
+
+.container button {
+    margin-top: 50px;
+    width: 20vh;
+    font-size:25px;
+    background-color: #CC9544;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.container button a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.container button:hover{
+    font-size:calc(25px * 1.1);
+    width:calc(20vh * 1.1);
+    transition: 0.5s
+}
+
+
+
+#ContainProducts{
+    width: 100%;
+    min-width:1000px;    
+    height: 190vh;
+        background-color: #e0c499;
+}
+
+
+#ContainProducts .contain h2{
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+    color: white;
+    min-width: 1000px;
+    background-color:#1c0a0085;
+    margin-bottom: 20px;
+    height: 70px;
+}
+
+.productosInf{
+    display: grid;
+    justify-content:space-evenly;
+    grid-template-columns: 25% 25% 25%;
+
+}
+
+.productosInf .comprar {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 40px;
+    opacity: 1;
+    background-color: #c8964a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.productosInf .comprar img{
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    border: 1px solid #603601
+}
+
+.productosInf .comprar .NameProduct{
+    font-size:20px;
+    color: #1C0A00;
+}
+
+.productosInf .comprar .Price{
+    color: #ffff;
+    font-size: 30px;
+    margin-bottom: 10px; 
+}
+
+.productosInf .comprar .Price:hover{
+    color: #784d17;
+    transition: 0.2s
+}
+
+.productosInf .comprar button{
+    background-color: #ffffff;
+    border:none;
+    font-size: 20px;
+    width: 130px;
+    border-radius:10px;
+    font-family: 'Righteous', cursive;
+}
+
+.productosInf .comprar button:hover{
+    background-color:#ddd5d1;
+    transition:0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        height:130vh;
+    }
+    main header .menuPepe ul {
+        display: none;
+    }
+
+    section{
+        height:100vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    main{
+        height:120vh;
+    }
+    main header .menuPepe ul {
+        display: none;
+    }
+
+    section{
+        height:120vh;
+    }
+}
+
+.pepeProductos {
+    color: white;
+    text-align: center;
+}
+
+.ProductoCompradoXd{
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+
+}
+.pepeProductos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductoCompradoXdInformacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerProductosCompradosPepe{
+    width: 70%;
+    background-color: #CC9544;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.NameProduct{
+    font-size: 15px;
+}
